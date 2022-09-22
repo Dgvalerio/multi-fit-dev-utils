@@ -1,7 +1,16 @@
 import { FC } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const App: FC = () => {
-  return <h1>Multi Fit Dev Utils</h1>;
-};
+import Home from './home';
+
+const App: FC = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/open-pull-requests" element={<OpenPullRequests />} />*/}
+      {/* <Route path="/personal-commits" element={<PersonalCommits />} />*/}
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;
