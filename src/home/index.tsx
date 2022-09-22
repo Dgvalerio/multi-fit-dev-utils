@@ -28,7 +28,7 @@ const Item: FC<ItemProps> = ({ text, link }) => (
 );
 
 const pages: ItemProps[] = [
-  // { link: '/open-pull-requests', text: 'Exibir Pull Requests Abertos' },
+  { link: '/open-pull-requests', text: 'Exibir Pull Requests Abertos' },
   // { link: '/personal-commits', text: 'Pesquisar commits' },
 ];
 
